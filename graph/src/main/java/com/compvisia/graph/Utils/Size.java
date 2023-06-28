@@ -9,7 +9,7 @@ package com.compvisia.graph.Utils;
  * @author Youri Schijff
  * @since 1.0 (c-1)
  */
-public record Size(int width, int height) {
+public record Size(double width, double height) {
 
     /**
      * Returns a Size object with sides width and height.
@@ -18,7 +18,7 @@ public record Size(int width, int height) {
      * @param height height of object
      * @return a new Size object
      */
-    public static Size of(int width, int height) {
+    public static Size of(double width, double height) {
         return new Size(width, height);
     }
     /**
@@ -27,7 +27,7 @@ public record Size(int width, int height) {
      * @param length the length side of object
      * @return a new Size object
      */
-    public static Size square(int length) {
+    public static Size square(double length) {
         return new Size(length, length);
     }
 
